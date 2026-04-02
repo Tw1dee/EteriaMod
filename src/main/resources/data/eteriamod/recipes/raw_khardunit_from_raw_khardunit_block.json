@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eteriamod:raw_khardunit_block"
+    }
+  ],
+  "result": {
+    "item": "eteriamod:raw_khardunit",
+    "count": 9
+  }
+}

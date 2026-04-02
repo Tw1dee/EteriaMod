@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "eteriamod:raw_khardunit_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "eteriamod:blocks/raw_khardunit_block"
+}

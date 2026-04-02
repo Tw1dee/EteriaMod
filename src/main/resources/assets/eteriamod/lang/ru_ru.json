@@ -1,0 +1,18 @@
+{
+  "item.eteriamod.khardunit_ingot": "Кхардунитовый Слиток",
+  "item.eteriamod.raw_khardunit": "Кхардунитовая Руда",
+  "item.eteriamod.oak_bark": "Дубовая Кора",
+
+  "item.eteriamod.banana": "Банан",
+  "item.eteriamod.stew_with_potatoes": "Рагу с Картошкой",
+
+  "block.eteriamod.khardunit_block": "Кхардунитовый Блок",
+  "block.eteriamod.raw_khardunit_block": "Блок Кхардунитовой Руды",
+
+  "block.eteriamod.khardunit_ore": "Кхардунитовая Руда",
+  "block.eteriamod.deepslate_khardunit_ore": "Глубинная Кхардунитовая Руда",
+
+  "creativetab.ingredients": "Ингредиенты",
+  "creativetab.blocks": "Блоки",
+  "creativetab.foods": "Еда"
+}

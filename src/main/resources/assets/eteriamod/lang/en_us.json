@@ -1,0 +1,18 @@
+{
+  "item.eteriamod.khardunit_ingot": "Khardunit Ingot",
+  "item.eteriamod.raw_khardunit": "Raw Khardunit",
+  "item.eteriamod.oak_bark": "Oak Bark",
+
+  "item.eteriamod.banana": "Banana",
+  "item.eteriamod.stew_with_potatoes": "Stew With Potatoes",
+
+  "block.eteriamod.khardunit_block": "Block of Khardunit",
+  "block.eteriamod.raw_khardunit_block": "Block of Raw Khardunit",
+
+  "block.eteriamod.khardunit_ore": "Khardunit Ore",
+  "block.eteriamod.deepslate_khardunit_ore": "Deepslate Khardunit Ore",
+
+  "creativetab.ingredients": "Ingredients",
+  "creativetab.blocks": "Blocks",
+  "creativetab.foods": "Foods"
+}

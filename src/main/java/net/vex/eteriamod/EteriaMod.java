@@ -1,6 +1,8 @@
 package net.vex.eteriamod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -12,17 +14,24 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.vex.eteriamod.block.ModBlocks;
+import net.vex.eteriamod.item.ModCreativeModTabs;
+import net.vex.eteriamod.item.ModItems;
 import org.slf4j.Logger;
 
 @Mod(EteriaMod.MOD_ID)
-public class EteriaMod
-{
+public class EteriaMod {
     public static final String MOD_ID = "eteriamod";
 
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public EteriaMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

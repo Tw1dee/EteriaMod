@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "eteriamod:block/raw_khardunit_block"
+  }
+}
