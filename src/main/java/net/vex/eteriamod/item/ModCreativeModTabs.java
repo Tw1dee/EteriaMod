@@ -25,6 +25,7 @@ public class ModCreativeModTabs {
 
                     })
                     .build());
+
     public static final RegistryObject<CreativeModeTab> BLOCKS = CREATIVE_MODE_TABS.register("blocks",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.KHARDUNIT_BLOCK.get()))
                     .title(Component.translatable("creativetab.blocks"))
@@ -42,6 +43,15 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.BANANA.get());
                         pOutput.accept(ModItems.STEW_WITH_POTATOES.get());
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> TEST = CREATIVE_MODE_TABS.register("test",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BLOCK_TAG_CHECKER.get()))
+                    .title(Component.translatable("creativetab.test"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.BLOCK_TAG_CHECKER.get());
+                        pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                     })
                     .build());
 

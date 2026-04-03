@@ -1,6 +1,10 @@
 {
   "item.eteriamod.khardunit_ingot": "Khardunit Ingot",
   "item.eteriamod.raw_khardunit": "Raw Khardunit",
+
+  "item.eteriamod.block_tag_checker": "Block Tag Checker",
+  "block.eteriamod.sound_block": "Sound Block",
+
   "item.eteriamod.oak_bark": "Oak Bark",
 
   "item.eteriamod.banana": "Banana",
@@ -14,5 +18,8 @@
 
   "creativetab.ingredients": "Ingredients",
   "creativetab.blocks": "Blocks",
-  "creativetab.foods": "Foods"
+  "creativetab.foods": "Foods",
+  "creativetab.test": "Test",
+
+  "tooltip.eteriamod.block_tag_checker.tooltip": "This item is just for a test, okay?"
 }

@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.vex.eteriamod.EteriaMod;
+import net.vex.eteriamod.item.custom.BlockTagChecker;
 import net.vex.eteriamod.item.custom.FuelItem;
 
 public class ModItems {
@@ -16,6 +17,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_KHARDUNIT = ITEMS.register("raw_khardunit",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> BLOCK_TAG_CHECKER = ITEMS.register("block_tag_checker",
+            () -> new BlockTagChecker(new Item.Properties().durability(100)));
 
     public static final RegistryObject<Item> BANANA = ITEMS.register("banana",
             () -> new Item(new Item.Properties().food(ModFoods.BANANA)));

@@ -1,6 +1,5 @@
 package net.vex.eteriamod.block;
 
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -12,6 +11,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.vex.eteriamod.EteriaMod;
 import net.vex.eteriamod.item.ModItems;
+import net.vex.eteriamod.block.custom.SoundBlock;
 
 import java.util.function.Supplier;
 
@@ -30,6 +30,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_KHARDUNIT_ORE = registerBlock("deepslate_khardunit_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .strength(4f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

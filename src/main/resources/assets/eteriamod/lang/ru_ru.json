@@ -3,6 +3,9 @@
   "item.eteriamod.raw_khardunit": "Кхардунитовая Руда",
   "item.eteriamod.oak_bark": "Дубовая Кора",
 
+  "item.eteriamod.block_tag_checker": "Блок Тэг Чекер",
+  "block.eteriamod.sound_block": "Звуковой Блок",
+
   "item.eteriamod.banana": "Банан",
   "item.eteriamod.stew_with_potatoes": "Рагу с Картошкой",
 
@@ -14,5 +17,8 @@
 
   "creativetab.ingredients": "Ингредиенты",
   "creativetab.blocks": "Блоки",
-  "creativetab.foods": "Еда"
+  "creativetab.foods": "Еда",
+  "creativetab.test": "Тест",
+
+  "tooltip.eteriamod.block_tag_checker.tooltip": "Этот предмет нужен чтобы просто провести тест окей?"
 }
