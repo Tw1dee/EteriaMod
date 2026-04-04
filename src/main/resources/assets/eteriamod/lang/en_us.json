@@ -1,4 +1,23 @@
 {
+  "_comment1": "Blocks",
+  "block.eteriamod.khardunit_ore": "Khardunit Ore",
+  "block.eteriamod.deepslate_khardunit_ore": "Deepslate Khardunit Ore",
+  "block.eteriamod.khardunit_block": "Block of Khardunit",
+  "block.eteriamod.raw_khardunit_block": "Block of Raw Khardunit",
+
+  "block.eteriamod.weathered_sandstone": "Weathered Sandstone",
+  "block.eteriamod.weathered_sandstone_stairs": "Weathered Sandstone Stairs",
+  "block.eteriamod.weathered_sandstone_slab": "Weathered Sandstone Slab",
+  "block.eteriamod.weathered_sandstone_wall": "Weathered Sandstone Wall",
+  "block.eteriamod.weathered_sandstone_bricks": "Weathered Sandstone Brick",
+  "block.eteriamod.weathered_sandstone_bricks_stairs": "Weathered Sandstone Brick Stairs",
+  "block.eteriamod.weathered_sandstone_bricks_slab": "Weathered Sandstone Brick Slab",
+  "block.eteriamod.weathered_sandstone_brick_wall": "Weathered Sandstone Brick Wall",
+  "block.eteriamod.weathered_sandstone_button": "Weathered Sandstone Button",
+  "block.eteriamod.weathered_sandstone_pressure_plate": "Weathered Sandstone Pressure Plate",
+  "block.eteriamod.weathered_sandstone_door": "Weathered Sandstone Door",
+  "block.eteriamod.weathered_sandstone_trapdoor": "Weathered Sandstone TrapDoor",
+
   "item.eteriamod.khardunit_ingot": "Khardunit Ingot",
   "item.eteriamod.raw_khardunit": "Raw Khardunit",
 
@@ -10,12 +29,7 @@
   "item.eteriamod.banana": "Banana",
   "item.eteriamod.stew_with_potatoes": "Stew With Potatoes",
 
-  "block.eteriamod.khardunit_block": "Block of Khardunit",
-  "block.eteriamod.raw_khardunit_block": "Block of Raw Khardunit",
-
-  "block.eteriamod.khardunit_ore": "Khardunit Ore",
-  "block.eteriamod.deepslate_khardunit_ore": "Deepslate Khardunit Ore",
-
+  "_comment": "Creative Tabs",
   "creativetab.ingredients": "Ingredients",
   "creativetab.blocks": "Blocks",
   "creativetab.foods": "Foods",

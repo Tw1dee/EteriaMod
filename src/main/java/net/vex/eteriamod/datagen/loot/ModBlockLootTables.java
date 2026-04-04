@@ -16,7 +16,7 @@ import net.vex.eteriamod.item.ModItems;
 import java.util.Set;
 
 public class ModBlockLootTables extends BlockLootSubProvider {
-    protected ModBlockLootTables(Set<Item> pExplosionResistant, FeatureFlagSet pEnabledFeatures) {
+    public ModBlockLootTables() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
 
@@ -24,11 +24,28 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ModBlocks.KHARDUNIT_BLOCK.get());
         this.dropSelf(ModBlocks.RAW_KHARDUNIT_BLOCK.get());
+        this.dropSelf(ModBlocks.SOUND_BLOCK.get());
+        this.dropSelf(ModBlocks.WEATHERED_SANDSTONE.get());
+        this.dropSelf(ModBlocks.WEATHERED_SANDSTONE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.WEATHERED_SANDSTONE_WALL.get());
+        this.dropSelf(ModBlocks.WEATHERED_SANDSTONE_STAIRS.get());
+        this.add(ModBlocks.WEATHERED_SANDSTONE_SLAB.get(), this::createSlabItemTable);
+        this.dropSelf(ModBlocks.WEATHERED_SANDSTONE_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.WEATHERED_SANDSTONE_BUTTON.get());
+        this.dropSelf(ModBlocks.WEATHERED_SANDSTONE_BRICKS.get());
+        this.dropSelf(ModBlocks.WEATHERED_SANDSTONE_BRICKS_WALL.get());
+        this.dropSelf(ModBlocks.WEATHERED_SANDSTONE_BRICKS_STAIRS.get());
+        this.add(ModBlocks.WEATHERED_SANDSTONE_BRICKS_SLAB.get(), this::createSlabItemTable);
+
+        this.add(ModBlocks.WEATHERED_SANDSTONE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.WEATHERED_SANDSTONE_DOOR.get()));
 
         this.add(ModBlocks.KHARDUNIT_ORE.get(),
-                block -> createLikeOreDrop(ModBlocks.KHARDUNIT_BLOCK.get(), ModItems.RAW_KHARDUNIT.get()));
+                block -> createLikeOreDrop(ModBlocks.KHARDUNIT_ORE.get(), ModItems.RAW_KHARDUNIT.get()));
         this.add(ModBlocks.DEEPSLATE_KHARDUNIT_ORE.get(),
                 block -> createLikeOreDrop(ModBlocks.DEEPSLATE_KHARDUNIT_ORE.get(), ModItems.RAW_KHARDUNIT.get()));
+
+        this.add(ModBlocks.SOUND_BLOCK.get(), block -> LootTable.lootTable());
         }
 
     protected LootTable.Builder createLikeOreDrop(Block pBlock, Item item) {
@@ -40,6 +57,24 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+        return java.util.List.of(
+                ModBlocks.KHARDUNIT_BLOCK.get(),
+                ModBlocks.RAW_KHARDUNIT_BLOCK.get(),
+                ModBlocks.SOUND_BLOCK.get(),
+                ModBlocks.WEATHERED_SANDSTONE.get(),
+                ModBlocks.WEATHERED_SANDSTONE_PRESSURE_PLATE.get(),
+                ModBlocks.WEATHERED_SANDSTONE_WALL.get(),
+                ModBlocks.WEATHERED_SANDSTONE_STAIRS.get(),
+                ModBlocks.WEATHERED_SANDSTONE_SLAB.get(),
+                ModBlocks.WEATHERED_SANDSTONE_TRAPDOOR.get(),
+                ModBlocks.WEATHERED_SANDSTONE_BUTTON.get(),
+                ModBlocks.WEATHERED_SANDSTONE_BRICKS.get(),
+                ModBlocks.WEATHERED_SANDSTONE_BRICKS_WALL.get(),
+                ModBlocks.WEATHERED_SANDSTONE_BRICKS_STAIRS.get(),
+                ModBlocks.WEATHERED_SANDSTONE_BRICKS_SLAB.get(),
+                ModBlocks.WEATHERED_SANDSTONE_DOOR.get(),
+                ModBlocks.KHARDUNIT_ORE.get(),
+                ModBlocks.DEEPSLATE_KHARDUNIT_ORE.get()
+        );
     }
 }

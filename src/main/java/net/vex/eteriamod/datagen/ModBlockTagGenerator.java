@@ -27,14 +27,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.KHARDUNIT_ORE.get(),
                         ModBlocks.DEEPSLATE_KHARDUNIT_ORE.get(),
                         ModBlocks.KHARDUNIT_BLOCK.get(),
-                        ModBlocks.RAW_KHARDUNIT_BLOCK.get()
-
+                        ModBlocks.RAW_KHARDUNIT_BLOCK.get(),
+                        ModBlocks.WEATHERED_SANDSTONE.get(),
+                        ModBlocks.WEATHERED_SANDSTONE_BRICKS.get()
                 );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.KHARDUNIT_ORE.get(),
-                        ModBlocks.DEEPSLATE_KHARDUNIT_ORE.get()
+                        ModBlocks.DEEPSLATE_KHARDUNIT_ORE.get());
 
-                );
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.WEATHERED_SANDSTONE_WALL.get());
     }
 }

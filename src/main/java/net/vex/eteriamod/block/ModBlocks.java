@@ -2,9 +2,9 @@ package net.vex.eteriamod.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -32,7 +32,37 @@ public class ModBlocks {
                     .strength(4f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
-            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noLootTable()));
+
+    public static final RegistryObject<Block> WEATHERED_SANDSTONE = registerBlock("weathered_sandstone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+    public static final RegistryObject<Block> WEATHERED_SANDSTONE_STAIRS = registerBlock("weathered_sandstone_stairs",
+            () -> new StairBlock(() -> ModBlocks.WEATHERED_SANDSTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+    public static final RegistryObject<Block> WEATHERED_SANDSTONE_SLAB = registerBlock("weathered_sandstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+    public static final RegistryObject<Block> WEATHERED_SANDSTONE_WALL = registerBlock("weathered_sandstone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+
+    public static final RegistryObject<Block> WEATHERED_SANDSTONE_BRICKS = registerBlock("weathered_sandstone_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+    public static final RegistryObject<Block> WEATHERED_SANDSTONE_BRICKS_STAIRS = registerBlock("weathered_sandstone_bricks_stairs",
+            () -> new StairBlock(() -> ModBlocks.WEATHERED_SANDSTONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+    public static final RegistryObject<Block> WEATHERED_SANDSTONE_BRICKS_SLAB = registerBlock("weathered_sandstone_bricks_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+    public static final RegistryObject<Block> WEATHERED_SANDSTONE_BRICKS_WALL = registerBlock("weathered_sandstone_bricks_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
+
+    public static final RegistryObject<Block> WEATHERED_SANDSTONE_BUTTON = registerBlock("weathered_sandstone_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON), BlockSetType.STONE, 10, true));
+    public static final RegistryObject<Block> WEATHERED_SANDSTONE_PRESSURE_PLATE = registerBlock("weathered_sandstone_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON),
+                    BlockSetType.STONE));
+    public static final RegistryObject<Block> WEATHERED_SANDSTONE_DOOR = registerBlock("weathered_sandstone_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noLootTable(), BlockSetType.STONE));
+    public static final RegistryObject<Block> WEATHERED_SANDSTONE_TRAPDOOR = registerBlock("weathered_sandstone_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noLootTable(), BlockSetType.STONE));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

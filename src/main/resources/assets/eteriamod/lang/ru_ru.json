@@ -1,4 +1,24 @@
 {
+  "_comment1": "Блоки",
+  "block.eteriamod.khardunit_block": "Кхардунитовый Блок",
+  "block.eteriamod.raw_khardunit_block": "Блок Кхардунитовой Руды",
+  "block.eteriamod.khardunit_ore": "Кхардунитовая Руда",
+  "block.eteriamod.deepslate_khardunit_ore": "Глубинная Кхардунитовая Руда",
+
+  "block.eteriamod.weathered_sandstone": "Выветрившийся Песчаник",
+  "block.eteriamod.weathered_sandstone_stairs": "Ступени из Выветренного Песчаника",
+  "block.eteriamod.weathered_sandstone_slab": "Выветрившаяся Плита из Песчаника",
+  "block.eteriamod.weathered_sandstone_wall": "Стена из Выветренного Песчаника",
+  "block.eteriamod.weathered_sandstone_bricks": "Выветрившийся Кирпич из песчаника",
+  "block.eteriamod.weathered_sandstone_bricks_stairs": "Кирпичная Лестница из Выветренного Песчаника",
+  "block.eteriamod.weathered_sandstone_bricks_slab": "Кирпичная Плита из Выветренного Песчаника",
+  "block.eteriamod.weathered_sandstone_bricks_wall": "Выветрившаяся Кирпичная Стена из Песчаника",
+  "block.eteriamod.weathered_sandstone_button": "Кнопка из Выветренного Песчаника",
+  "block.eteriamod.weathered_sandstone_pressure_plate": "Нажимная Плита из Выветренного Песчаника",
+  "block.eteriamod.weathered_sandstone_door": "Дверь из Выветренного Песчаника",
+  "block.eteriamod.weathered_sandstone_trapdoor": "Люк из Выветренного Песчаника",
+
+
   "item.eteriamod.khardunit_ingot": "Кхардунитовый Слиток",
   "item.eteriamod.raw_khardunit": "Кхардунитовая Руда",
   "item.eteriamod.oak_bark": "Дубовая Кора",
@@ -9,12 +29,7 @@
   "item.eteriamod.banana": "Банан",
   "item.eteriamod.stew_with_potatoes": "Рагу с Картошкой",
 
-  "block.eteriamod.khardunit_block": "Кхардунитовый Блок",
-  "block.eteriamod.raw_khardunit_block": "Блок Кхардунитовой Руды",
-
-  "block.eteriamod.khardunit_ore": "Кхардунитовая Руда",
-  "block.eteriamod.deepslate_khardunit_ore": "Глубинная Кхардунитовая Руда",
-
+  "_comment": "Креатив Вкладки",
   "creativetab.ingredients": "Ингредиенты",
   "creativetab.blocks": "Блоки",
   "creativetab.foods": "Еда",

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "eteriamod:block/deepslate_khardunit_ore"
-  }
-}
